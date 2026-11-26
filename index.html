@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A little anniversary quiz game 💙">
+<meta name="theme-color" content="#070d33">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💙</text></svg>">
+<title>The Little Game of Us 💙</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="sky"></canvas>
+<div class="aurora"></div>
+<div class="moon"></div>
+<button id="mute" aria-label="Toggle sound" title="Sound on/off">🔊</button>
+<div id="app">
+  <div id="hud">
+    <div class="hud-row"><span id="lvLabel"></span><span class="chip" id="scoreChip">💙 <span id="score">0</span></span></div>
+    <div class="bar"><div id="barFill"></div></div>
+  </div>
+  <main id="stage"></main>
+</div>
+
+<!-- Content first, then the engine -->
+<script src="js/content.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
